@@ -2,7 +2,6 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
-import 'rrweb/dist/rrweb'
 
 import { createApp } from 'vue'
 

@@ -3,6 +3,7 @@
         <h1>rrweb test</h1>
         <p>Hello, world!</p>
 
+        <AppRecorder/>
         <AppTable/>
 
         <fieldset>
@@ -89,10 +90,12 @@
 
 <script>
     import AppTable from './Table.vue'
+    import AppRecorder from './Recorder.vue'
 
     export default {
         components: {
             AppTable,
+            AppRecorder,
         },
         data() {
             return {
