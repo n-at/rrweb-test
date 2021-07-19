@@ -1,11 +1,18 @@
 <template>
     <div class="card">
         <div class="card-body">
-            <button v-if="!recording" type="button" class="btn btn-outline-primary" @click="start">Start recording</button>
-            <button v-else type="button" class="btn btn-outline-danger" @click="stop">Stop recording</button>
-
-            <button v-if="recordingAvailable" type="button" class="btn btn-outline-info ml-3" @click="copyRecording">Copy recording to clipboard</button>
-            <a v-if="recordingAvailable" href="player.html" target="_blank" class="btn btn-outline-secondary">Open player</a>
+            <button v-if="!recording" type="button" class="btn btn-outline-danger" @click="start">
+                <i class="fa fa-circle"></i> Start recording
+            </button>
+            <button v-else type="button" class="btn btn-outline-danger" @click="stop">
+                <i class="fa fa-stop"></i> Stop recording
+            </button>
+            <button v-if="recordingAvailable" type="button" class="btn btn-outline-secondary ms-3" @click="copyRecording">
+                <i class="fa fa-clipboard"></i> Copy recording to clipboard
+            </button>
+            <a v-if="recordingAvailable" href="player.html" target="_blank" class="btn btn-outline-secondary ms-3">
+                <i class="fa fa-share"></i> Open player
+            </a>
         </div>
     </div>
 </template>
