@@ -5,6 +5,7 @@
             <button v-else type="button" class="btn btn-outline-danger" @click="stop">Stop recording</button>
 
             <button v-if="recordingAvailable" type="button" class="btn btn-outline-info ml-3" @click="copyRecording">Copy recording to clipboard</button>
+            <a v-if="recordingAvailable" href="player.html" target="_blank" class="btn btn-outline-secondary">Open player</a>
         </div>
     </div>
 </template>

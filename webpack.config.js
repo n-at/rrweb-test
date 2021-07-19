@@ -13,6 +13,7 @@ const productionBuildPath = path.resolve(__dirname, 'public', 'build')
 
 const entries = {
     index: './public/index.js',
+    player: './public/player.js',
 }
 
 ///////////////////////////////////////////////////////////////////////////////
